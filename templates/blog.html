@@ -68,12 +68,11 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 
+
 .div {
     position: relative;
-    margin-top: 150px;
-    margin-bottom: 50px;
-    margin-right: 200px;
-    margin-left: 200px;
+    height:400px;
+    width: 500px;
     border-radius : 10px;
     background-color: white;
     padding: 20px;
@@ -89,11 +88,21 @@ filter: alpha(opacity=80);
 opacity: 0.8;
 }
 
+#responsive {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
 
 
 </style>
 <body id="background">
  <h3 style="color:brown">This is Dat's secret mail box, let me know whatever you would like to share!</h3>   
+
+<div id="responsive">
 
 <div class="div" class="transparent">
     <form action="" method="POST" class="transparent">
@@ -111,6 +120,8 @@ opacity: 0.8;
 
 
     </form>
+</div>
+
 </div>
 </body>
 </html>
