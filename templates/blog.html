@@ -10,11 +10,28 @@
 
 <style>
 
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+
 body {
     height: 900px;
     widows: 600px;
     background-image: url('../static/image/background.jpg');
-    background-size:100%;
+    background-size:cover;
 
 }
 
@@ -52,23 +69,34 @@ input[type=submit]:hover {
 }
 
 .div {
+    position: relative;
     margin-top: 150px;
     margin-bottom: 50px;
-    margin-right: 500px;
-    margin-left: 500px;
+    margin-right: 200px;
+    margin-left: 200px;
     border-radius : 10px;
-    background-color: #f2f2f2;
+    background-color: white;
     padding: 20px;
+    zoom: 1;
+    filter: alpha(opacity=80);
+    opacity: 0.8
 
 }
+
+.transparent {
+zoom: 1;
+filter: alpha(opacity=80);
+opacity: 0.8;
+}
+
 
 
 </style>
 <body id="background">
  <h3 style="color:brown">This is Dat's secret mail box, let me know whatever you would like to share!</h3>   
 
-<div class="div">
-    <form action="" method="POST">
+<div class="div" class="transparent">
+    <form action="" method="POST" class="transparent">
         <label style="font-style:inherit; font-family: 'Courier New', Courier, monospace">Your Name (you can leave it blank)</label>
         <input type="text" name="name" placeholder=":D">
         <label style="font-style:initial; font-family: 'Courier New', Courier, monospace">Your email adress (In case you need a response from me)</label>
