@@ -27,17 +27,21 @@
   }
 }
 
+html {
+    height: 1000px;
+}
 body {
-    height: 900px;
-    widows: 600px;
+    height: 100%;
+    width: 100%;
     background-image: url('../static/image/background.jpg');
     background-size:cover;
-
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 input[type=text], select {
     width:100%;
-    padding:12px, 20px;
+    padding:5%, 10%;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
@@ -71,8 +75,8 @@ input[type=submit]:hover {
 
 .div {
     position: relative;
-    height:400px;
-    width: 500px;
+    height:40%;
+    width: 50%;
     border-radius : 10px;
     background-color: white;
     padding: 20px;
@@ -100,8 +104,13 @@ opacity: 0.8;
 
 </style>
 <body id="background">
- <h3 style="color:brown">This is Dat's secret mail box, let me know whatever you would like to share!</h3>   
 
+<div style="background-color: black; width: 400px; margin-left: 5px;">
+        <h3 style="color:brown; font-size: 20px; margin-left: 10px; margin-bottom: 20px;" display="flex" flex-flow= "column"  justify-content="center"> This is Dat's mail box, let me know whatever you would like to share!</h3>   
+       
+</div>
+       
+ 
 <div id="responsive">
 
 <div class="div" class="transparent">
